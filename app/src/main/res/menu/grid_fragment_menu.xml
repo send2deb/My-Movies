@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_action_sort"
+        android:orderInCategory="200"
+        android:title="@string/menu_action_sort"
+        android:icon="@drawable/ic_menu_sort_variant"
+
+        app:showAsAction="collapseActionView|ifRoom"/>
+    <item
+        android:id="@+id/menu_action_filter"
+        android:orderInCategory="300"
+        android:title="@string/menu_action_filter"
+        android:icon="@drawable/ic_menu_filter_add"
+        app:showAsAction="collapseActionView|ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_action_filter_reset"
+                android:orderInCategory="100"
+                android:title="@string/menu_action_filter_reset"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menu_action_filter_release_year"
+                android:orderInCategory="200"
+                android:title="@string/menu_action_filter_release_year"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/menu_action_filter_genre"
+                android:orderInCategory="300"
+                android:title="@string/menu_action_filter_genre"
+                app:showAsAction="never">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item android:id="@+id/menu_action_filter_genre_action"
+                            android:title="@string/menu_action_filter_genre_action" />
+                        <item android:id="@+id/menu_action_filter_genre_adventure"
+                            android:title="@string/menu_action_filter_genre_adventure" />
+                        <item android:id="@+id/menu_action_filter_genre_animation"
+                            android:title="@string/menu_action_filter_genre_animation" />
+                        <item android:id="@+id/menu_action_filter_genre_comedy"
+                            android:title="@string/menu_action_filter_genre_comedy" />
+                        <item android:id="@+id/menu_action_filter_genre_crime"
+                            android:title="@string/menu_action_filter_genre_crime" />
+                        <item android:id="@+id/menu_action_filter_genre_documentary"
+                            android:title="@string/menu_action_filter_genre_documentary" />
+                        <item android:id="@+id/menu_action_filter_genre_drama"
+                            android:title="@string/menu_action_filter_genre_drama" />
+                        <item android:id="@+id/menu_action_filter_genre_family"
+                            android:title="@string/menu_action_filter_genre_family" />
+                        <item android:id="@+id/menu_action_filter_genre_fantasy"
+                            android:title="@string/menu_action_filter_genre_fantasy" />
+                        <item android:id="@+id/menu_action_filter_genre_history"
+                            android:title="@string/menu_action_filter_genre_history" />
+                        <item android:id="@+id/menu_action_filter_genre_horror"
+                            android:title="@string/menu_action_filter_genre_horror" />
+                        <item android:id="@+id/menu_action_filter_genre_music"
+                            android:title="@string/menu_action_filter_genre_music" />
+                        <item android:id="@+id/menu_action_filter_genre_mystery"
+                            android:title="@string/menu_action_filter_genre_mystery" />
+                        <item android:id="@+id/menu_action_filter_genre_romance"
+                            android:title="@string/menu_action_filter_genre_romance" />
+                        <item android:id="@+id/menu_action_filter_genre_science_fiction"
+                            android:title="@string/menu_action_filter_genre_science_fiction" />
+                        <item android:id="@+id/menu_action_filter_genre_tv_movie"
+                            android:title="@string/menu_action_filter_genre_tv_movie" />
+                        <item android:id="@+id/menu_action_filter_genre_thriller"
+                            android:title="@string/menu_action_filter_genre_thriller" />
+                        <item android:id="@+id/menu_action_filter_genre_war"
+                            android:title="@string/menu_action_filter_genre_war" />
+                        <item android:id="@+id/menu_action_filter_genre_western"
+                            android:title="@string/menu_action_filter_genre_western" />
+                    </group>
+                </menu>
+                </item>
+            <item
+                android:id="@+id/menu_action_filter_rating"
+                android:orderInCategory="400"
+                android:title="@string/menu_action_filter_rating"
+                app:showAsAction="never">
+                <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/menu_action_filter_rating_greater_than_equal_9"
+                        android:title="@string/menu_action_filter_rating_greater_than_equal_9" />
+                    <item android:id="@+id/menu_action_filter_rating_greater_than_equal_8"
+                        android:title="@string/menu_action_filter_rating_greater_than_equal_8" />
+                    <item android:id="@+id/menu_action_filter_rating_greater_than_equal_7"
+                        android:title="@string/menu_action_filter_rating_greater_than_equal_7" />
+                    <item android:id="@+id/menu_action_filter_rating_greater_than_equal_6"
+                        android:title="@string/menu_action_filter_rating_greater_than_equal_6" />
+                    <item android:id="@+id/menu_action_filter_rating_greater_than_equal_5"
+                        android:title="@string/menu_action_filter_rating_greater_than_equal_5" />
+                    <item android:id="@+id/menu_action_filter_rating_less_than_5"
+                        android:title="@string/menu_action_filter_rating_less_than_5" />
+                </group>
+                </menu>
+                </item>
+        </menu>
+    </item>
+</menu>

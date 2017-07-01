@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="backdrop_image_height_detail_view">500dp</dimen>
+    <dimen name="tablet_port_nested_scroll_left_right_margin">60dp</dimen>
+    <dimen name="tablet_port_nested_scroll_layout_top_overlap">30dp</dimen>
+    <dimen name="tablet_port_view_pager_indicator_bottom_margin">40dp</dimen>
+    <dimen name="tablet_poster_section_element_width">150dp</dimen>
+    <dimen name="movie_detail_collection_backdrop_height">340dp</dimen>
+    <dimen name="movie_detail_poster_width">215dp</dimen>
+    <dimen name="movie_detail_poster_height">254dp</dimen>
+    <dimen name="tablet_port_movie_backdrop_height">500dp</dimen>
+
+</resources>

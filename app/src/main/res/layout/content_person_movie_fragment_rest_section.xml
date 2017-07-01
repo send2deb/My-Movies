@@ -1,0 +1,290 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Overdraw">
+
+    <!-- Person biography section -->
+    <RelativeLayout
+        android:id="@+id/person_biography_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingTop="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/person_biography_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:text="@string/person_biography"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/person_biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_biography_header"
+            android:ellipsize="end"
+            android:maxLines="@string/person_biography_collapse_line_item_count"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/secondary_text"/>
+        <ImageButton
+            android:id="@+id/person_biography_show_button"
+            android:layout_width="@dimen/person_biography_collapse_icon_size"
+            android:layout_height="@dimen/person_biography_collapse_icon_size"
+            android:layout_below="@+id/person_biography"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/divider_color"
+            android:contentDescription="@string/person_biography_show_button_content_description"
+            android:background="@drawable/ic_keyboard_arrow_down"
+            tools:ignore="UnusedAttribute" />
+        <ImageButton
+            android:id="@+id/person_biography_hide_button"
+            android:layout_width="@dimen/person_biography_collapse_icon_size"
+            android:layout_height="@dimen/person_biography_collapse_icon_size"
+            android:layout_below="@+id/person_biography"
+            android:clickable="true"
+            android:backgroundTint="@color/divider_color"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            android:contentDescription="@string/person_biography_hide_button_content_description"
+            android:background="@drawable/ic_keyboard_arrow_up"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/person_biography_layout_divider"
+        android:layout_below="@id/person_biography_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+        android:background="@color/divider_color" />
+
+    <!-- Person images grid view section -->
+    <RelativeLayout
+        android:id="@+id/person_image_grid_layout"
+        android:layout_below="@id/person_biography_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingTop="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/person_image_grid_header"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:paddingBottom="@dimen/m_design_space_between_content_area"
+            android:text="@string/person_image_grid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+        <FrameLayout
+            android:layout_below="@id/person_image_grid_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/person_image_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v17.leanback.widget.HorizontalGridView>
+
+            <!-- this is to display a message when the person crew grid is empty -->
+            <TextView
+                android:id="@+id/person_image_grid_empty_msg_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/secondary_text"
+                android:text="@string/movie_data_not_available"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/person_image_grid_layout_divider"
+        android:layout_below="@id/person_image_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+        android:background="@color/divider_color" />
+
+    <!-- Person as actor grid view section -->
+    <RelativeLayout
+        android:id="@+id/person_actor_grid_layout"
+        android:layout_below="@id/person_image_grid_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingTop="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/person_cast_grid_header"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:paddingBottom="@dimen/m_design_space_between_content_area"
+            android:text="@string/person_cast_grid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+        <FrameLayout
+            android:layout_below="@id/person_cast_grid_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/person_cast_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v17.leanback.widget.HorizontalGridView>
+
+            <!-- this is to display a message when the person cast grid is empty -->
+            <TextView
+                android:id="@+id/person_cast_grid_empty_msg_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/secondary_text"
+                android:text="@string/movie_data_not_available"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/person_actor_grid_layout_divider"
+        android:layout_below="@id/person_actor_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+        android:background="@color/divider_color" />
+
+    <!-- Person as crew grid view section -->
+    <RelativeLayout
+        android:id="@+id/person_crew_grid_layout"
+        android:layout_below="@id/person_actor_grid_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingTop="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/person_crew_grid_header"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:paddingBottom="@dimen/m_design_space_between_content_area"
+            android:text="@string/person_crew_grid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+        <FrameLayout
+            android:layout_below="@id/person_crew_grid_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/person_crew_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v17.leanback.widget.HorizontalGridView>
+
+            <!-- this is to display a message when the person crew grid is empty -->
+            <TextView
+                android:id="@+id/person_crew_grid_empty_msg_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/secondary_text"
+                android:text="@string/movie_data_not_available"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/person_crew_grid_layout_divider"
+        android:layout_below="@id/person_crew_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+        android:background="@color/divider_color" />
+
+    <!-- Person external web links (ic_drawer_home page & imdb link) section -->
+    <RelativeLayout
+        android:id="@+id/person_web_links_layout"
+        android:layout_below="@id/person_crew_grid_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingTop="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/person_web_links_header"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/m_design_space_between_content_area"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:text="@string/person_web_links_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+        <LinearLayout
+            android:layout_below="@id/person_web_links_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/person_web_links_home_page_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m_design_space_between_content_area"
+                android:layout_marginEnd="@dimen/m_design_space_between_content_area"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/person_web_links_home_page"
+                android:gravity="center"
+                android:background="@color/accent"
+                android:clickable="false"
+                android:alpha="0.4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/person_web_links_imdb_link_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m_design_space_between_content_area"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/detail_web_links_imdb_link"
+                android:gravity="center"
+                android:background="@color/accent"
+                android:clickable="false"
+                android:alpha="0.4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

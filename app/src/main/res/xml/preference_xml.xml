@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.preference.ListPreference
+        android:key="@string/pref_theme_key"
+        android:title="@string/pref_theme_title"
+        android:defaultValue="@string/pref_theme_default_value"
+        android:entries="@array/pref_theme_entries"
+        android:entryValues="@array/pref_theme_values" />
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="@string/pref_wifi_download_key"
+        android:title="@string/pref_wifi_download_title"
+        android:defaultValue="@string/pref_wifi_download_default_value"
+        android:summaryOn="@string/pref_wifi_download_summary_on"
+        android:summaryOff="@string/pref_wifi_download_summary_off" />
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="@string/pref_notification_key"
+        android:title="@string/pref_notification_title"
+        android:defaultValue="@string/pref_notification_default_value"
+        android:summaryOn="@string/pref_notification_summary_on"
+        android:summaryOff="@string/pref_notification_summary_off" />
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="@string/pref_recommendation_key"
+        android:title="@string/pref_recommendation_title"
+        android:defaultValue="@string/pref_recommendation_default_value"
+        android:summaryOn="@string/pref_recommendation_summary_on"
+        android:summaryOff="@string/pref_recommendation_summary_off" />
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="@string/pref_reduce_data_use_key"
+        android:title="@string/pref_reduce_data_use_title"
+        android:defaultValue="@string/pref_reduce_data_use_default_value"
+        android:summaryOn="@string/pref_reduce_data_use_summary_on"
+        android:summaryOff="@string/pref_reduce_data_use_summary_off" />
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,10 @@
+<com.moviemagic.dpaul.android.app.backgroundmodules.AutoGridRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auto_grid_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/gridview_horizontal_vertical_spacing"
+    android:columnWidth="@dimen/grid_image_width"
+    android:clipToPadding="false"
+    tools:ignore="Overdraw" />

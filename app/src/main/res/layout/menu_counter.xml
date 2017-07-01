@@ -1,0 +1,6 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:text="@string/menu_counter_zero_value"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />

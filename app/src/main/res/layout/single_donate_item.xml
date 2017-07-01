@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/single_donate_item_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/single_donate_item_donate_button"
+        android:paddingStart="@dimen/m_design_space_between_content_area"
+        android:paddingEnd="@dimen/m_design_space_between_content_area">
+
+        <TextView
+            android:id="@+id/single_donate_item_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/single_donate_item_link_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/single_donate_item_header"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/primary_background"
+            android:textIsSelectable="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/single_donate_item_donate_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:text="@string/single_donate_item_donate_button"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        app:backgroundTint="@color/accent" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize the theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+    </style>
+
+    <style name="ImageViewerTheme" parent="BaseTheme">
+    </style>
+
+    <style name="SettingsTheme" parent="BaseTheme">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppCompatAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/primary_dialog_n_card</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- Styles for each activity -->
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+    <style name="AppTheme.MovieMain" parent="@style/AppTheme"/>
+    <style name="AppTheme.MovieGrid" parent="@style/AppTheme"/>
+    <style name="AppTheme.MovieDetail" parent="@style/AppTheme"/>
+    <style name="AppTheme.MovieCollection" parent="@style/AppTheme"/>
+    <style name="AppTheme.MoviePerson" parent="@style/AppTheme"/>
+    <style name="AppTheme.Login" parent="@style/AppTheme"/>
+    <style name="AppTheme.ImageViewer" parent="@style/ImageViewerTheme"/>
+    <style name="AppTheme.Settings" parent="@style/SettingsTheme"/>
+    <style name="AppTheme.Search" parent="@style/AppTheme"/>
+    <style name="AppTheme.Donate" parent="@style/AppTheme"/>
+</resources>

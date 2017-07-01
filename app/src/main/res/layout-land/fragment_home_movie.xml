@@ -1,0 +1,29 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background">
+
+        <FrameLayout
+            android:id="@+id/home_youtube_fragment_container"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/landscape_youtube_margin"
+            android:layout_marginEnd="@dimen/landscape_youtube_margin"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/home_page_youtube_fragment_top_margin"
+            android:paddingBottom="@dimen/m_design_space_between_content_area"
+            android:visibility="visible" />
+
+        <include
+            android:layout_below="@id/home_youtube_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/content_home_movie_fragment" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

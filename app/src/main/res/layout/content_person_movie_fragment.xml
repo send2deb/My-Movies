@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Person poster section -->
+    <include android:id="@+id/content_person_movie_fragment_poster_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_person_movie_fragment_poster_section"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/person_info_layout"
+        android:layout_below="@id/content_person_movie_fragment_poster_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_background"
+        tools:ignore="Overdraw">
+
+        <View
+            android:id="@+id/content_person_movie_fragment_poster_section_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+            android:background="@color/divider_color" />
+
+        <!-- Person rest section -->
+        <include android:id="@+id/content_person_movie_fragment_rest_section"
+            android:layout_below="@id/content_person_movie_fragment_poster_section_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/content_person_movie_fragment_rest_section"/>
+    </RelativeLayout>
+</RelativeLayout>

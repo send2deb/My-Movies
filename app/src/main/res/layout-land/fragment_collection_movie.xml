@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/collection_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/collection_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collection_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_scrollFlags="snap">
+
+                <ImageView
+                    android:id="@+id/collection_backdrop_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:fitsSystemWindows="true"
+                    android:contentDescription="@string/person_land_backdrop_image_content_description"
+                    android:src="@drawable/image_place_holder" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_color_opacity_30"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical" />
+            <!-- setting itsSystemWindows="true" for toolbar moves ic_drawer_home up and setting buttons to status bar -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/collection_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="@dimen/m_design_toolbar_elevation"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="false"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                tools:ignore="UnusedAttribute" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/collection_nested_scroll"
+        android:layout_marginTop="@dimen/mobile_landscape_content_area_top_margin"
+        android:layout_marginStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:layout_marginEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fitsSystemWindows="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/content_collection_movie_fragment" />
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

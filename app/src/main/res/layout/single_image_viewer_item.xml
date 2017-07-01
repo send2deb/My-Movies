@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_viewer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_viewer_image_content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_place_holder" />
+
+    <TextView
+        android:id="@+id/image_viewer_pager_footer"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/primary_opacity_50"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/primary_text"
+        android:textIsSelectable="true" />
+</FrameLayout>

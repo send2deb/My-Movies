@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Specification for tablet-->
+    <dimen name="m_design_screen_edge_left_right_margin">24dp</dimen>
+
+
+    <dimen name="grid_image_height">190dp</dimen>
+    <dimen name="grid_image_width">140dp</dimen>
+    <dimen name="home_movie_backdrop_image_height">270dp</dimen>
+    <dimen name="home_movie_poster_image_width">200dp</dimen>
+    <dimen name="home_movie_poster_image_height">@dimen/home_movie_backdrop_image_height</dimen>
+    <dimen name="backdrop_image_height_detail_view">400dp</dimen>
+    <dimen name="tablet_port_nested_scroll_left_right_margin">40dp</dimen>
+    <dimen name="tablet_port_dummy_view_height">170dp</dimen>
+    <dimen name="tablet_port_view_pager_indicator_bottom_margin">40dp</dimen>
+    <dimen name="tablet_port_nested_scroll_layout_top_overlap">30dp</dimen>
+    <dimen name="person_poster_section_data_header_width">150dp</dimen>
+    <dimen name="person_poster_width">330dp</dimen>
+    <dimen name="person_poster_height">440dp</dimen>
+    <dimen name="person_poster_image_base_overlap">320dp</dimen>
+    <dimen name="tablet_port_movie_backdrop_height">400dp</dimen>
+    <dimen name="tablet_port_nested_scroll_layout_person_top_overlap">150dp</dimen>
+    <dimen name="splash_logo_height_width">500dp</dimen>
+
+</resources>

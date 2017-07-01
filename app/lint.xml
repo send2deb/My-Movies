@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="Overdraw">
+        <ignore path="src/main/res/layout/activity_search.xml"/>
+    </issue>
+    <!-- It seems lint is not showing unused ids correctly, it could be becuase of using Groovy, so ignore -->
+    <issue id="UnusedIds" severity="ignore" />
+    <!-- It seems lint is not showing unused resources correctly, it could be becuase of using Groovy, so ignore -->
+    <issue id="UnusedResources" severity="ignore" />
+    <!-- Some icons which are used for image button are only in mdpi, so ignore this warling -->
+    <issue id="IconDensities" severity="ignore" />
+    <!-- png icons are used for pre lollipop, so ignoring this warning -->
+    <issue id="IconXmlAndPng" severity="ignore"/>
+
+</lint>

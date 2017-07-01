@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_detail_movie_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="Overdraw">
+    <!-- Layout for title, genre & run time -->
+    <include android:id="@+id/content_detail_movie_fragment_title_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_detail_movie_fragment_title_section"/>
+
+    <View
+        android:id="@+id/content_detail_movie_fragment_title_section_divider"
+        android:layout_below="@id/content_detail_movie_fragment_title_section"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/mobile_portrait_divider_start_margin"
+        android:background="@color/divider_color"/>
+
+    <!-- Layout for movie poster, release date, budget, revenue & popularity -->
+    <include
+        android:id="@+id/content_detail_movie_fragment_poster_section"
+        android:layout_below="@id/content_detail_movie_fragment_title_section_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_detail_movie_fragment_poster_section"/>
+
+    <!-- Layout for rest -->
+    <include android:id="@+id/content_detail_movie_fragment_rest_section"
+        android:layout_below="@id/content_detail_movie_fragment_poster_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_detail_movie_fragment_rest_section"/>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_theme_entries">
+        <item>Dynamic Theme</item>
+        <item>Static Theme</item>
+    </string-array>
+    <string-array name="pref_theme_values">
+        <item>dynamic</item>
+        <item>static</item>
+    </string-array>
+    <!-- The order is important because program logic depends on this -->
+    <string-array name="sort_elements_public_or_tmdb_user">
+        <item>Movie Name</item>
+        <item>Release Date</item>
+        <item>Rating</item>
+    </string-array>
+    <string-array name="sort_elements_user_local">
+        <item>Movie Name</item>
+        <item>Release Date</item>
+        <item>Rating</item>
+        <item>Date Added</item>
+    </string-array>
+    <!-- The following two arrays are inter related, so order of the items are important -->
+    <string-array name="donate_header">
+        <item>Indian Prime Minister\'s National Relief Fund (India)</item>
+        <item>Bharat Sevashram Sangha (India)</item>
+        <item>Bachpan Bachao Andolan (India)</item>
+        <item>Give India (India)</item>
+        <item>HelpAge India (India)</item>
+        <item>Akshaya Patra (India)</item>
+        <item>The Hope Kolkata Foundation(India)</item>
+        <item>unicef (Worldwide)</item>
+        <item>Human Rights Watch (Worldwide)</item>
+        <item>American Red Cross (America)</item>
+        <item>Doctors Without Borders (America)</item>
+        <item>International Rescue Committee (America)</item>
+    </string-array>
+    <string-array name="donate_link_address">
+        <item>https://pmnrf.gov.in/payform.php</item>
+        <item>http://www.bharatsevashramsangha.net/</item>
+        <item>http://bba.org.in/</item>
+        <item>http://www.giveindia.org/</item>
+        <item>https://www.helpageindia.org/</item>
+        <item>https://www.akshayapatra.org/onlinedonations</item>
+        <item>http://www.hopechild.org/donate-online.aspx</item>
+        <item>https://www.unicef.org/</item>
+        <item>https://www.hrw.org/</item>
+        <item>http://www.redcross.org/</item>
+        <item>http://www.doctorswithoutborders.org/</item>
+        <item>https://www.rescue.org/</item>
+    </string-array>
+</resources>

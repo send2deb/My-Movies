@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mobile_portrait_divider_start_margin">16dp</dimen>
+    <dimen name="home_movie_poster_image_width">190dp</dimen>
+    <dimen name="home_movie_poster_image_height">@dimen/home_movie_backdrop_image_height</dimen>
+    <dimen name="home_page_land_orientation_width">380dp</dimen>
+    <dimen name="mobile_landscape_content_area_top_margin">48dp</dimen>
+    <dimen name="detail_fragment_content_area_bottom_margin">30dp</dimen>
+    <dimen name="person_poster_section_land_element_width">150dp</dimen>
+    <dimen name="movie_detail_land_poster_width">200dp</dimen>
+    <dimen name="movie_detail_land_poster_height">280dp</dimen>
+    <dimen name="movie_detail_poster_section_land_element_width">150dp</dimen>
+    <dimen name="landscape_youtube_margin">80dp</dimen>
+
+</resources>

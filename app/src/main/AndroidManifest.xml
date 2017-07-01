@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.moviemagic.dpaul.android.app"
+    tools:ignore="MissingLeanbackLauncher,MissingLeanbackSupport">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- Permissions required for network connection -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permissions required by the sync adapter -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <!-- Permissions required by the Authenticator -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- Permissions to write in public directory -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_movie_magic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="android.app.default_searchable" android:value=".SearchActivity"/>
+
+        <!-- SplashScreen Activity -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MovieMagicMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.MovieMain">
+        </activity>
+
+        <!-- Detail movie Activity -->
+        <activity
+            android:name=".DetailMovieActivity"
+            android:parentActivityName=".MovieMagicMainActivity"
+            android:label="@string/title_activity_detail_movie"
+            android:theme="@style/AppTheme.MovieDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MovieMagicMainActivity" />
+        </activity>
+
+        <!-- Collection movie Activity -->
+        <activity
+            android:name=".CollectionMovieActivity"
+            android:label="@string/title_activity_collection_movie"
+            android:theme="@style/AppTheme.MovieCollection">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailMovieActivity" />
+        </activity>
+
+        <!-- Person movie Activity -->
+        <activity
+            android:name=".PersonMovieActivity"
+            android:label="@string/title_activity_person_movie"
+            android:theme="@style/AppTheme.MoviePerson">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailMovieActivity" />
+        </activity>
+
+        <!-- Image Viewer movie Activity -->
+        <activity
+            android:name=".ImageViewerActivity"
+            android:label="@string/title_activity_image_viewer"
+            android:theme="@style/AppTheme.ImageViewer">
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".authentication.MovieMagicAuthenticatorActivity"
+            android:label="@string/title_activity_movie_magic_authenticator"
+            android:theme="@style/AppTheme.Login">
+        </activity>
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Search Activity -->
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.Search">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+
+        <!-- Donate Activity -->
+        <activity
+            android:name=".DonateActivity"
+            android:label="@string/title_activity_donate"
+            android:theme="@style/AppTheme.Donate">
+        </activity>
+
+        <!-- Register the content provider -->
+        <provider
+            android:name=".contentprovider.MovieMagicProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"
+            android:syncable="true" />
+
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name=".authentication.MovieMagicAuthenticatorService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The SyncAdapter service -->
+        <service
+            android:name=".syncadapter.MovieMagicSyncService"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Specification for tablet-->
+    <dimen name="m_design_screen_edge_left_right_margin">24dp</dimen>
+
+    <dimen name="home_movie_backdrop_image_height">270dp</dimen>
+    <dimen name="home_movie_poster_image_width">140dp</dimen>
+    <dimen name="home_movie_poster_image_height">190dp</dimen>
+    <dimen name="movie_detail_collection_backdrop_height">350dp</dimen>
+    <dimen name="movie_detail_land_poster_width">300dp</dimen>
+    <dimen name="movie_detail_land_poster_height">400dp</dimen>
+    <dimen name="person_poster_width">300dp</dimen>
+    <dimen name="person_poster_height">400dp</dimen>
+    <dimen name="mobile_landscape_content_area_top_margin">80dp</dimen>
+    <dimen name="splash_logo_height_width">300dp</dimen>
+
+</resources>

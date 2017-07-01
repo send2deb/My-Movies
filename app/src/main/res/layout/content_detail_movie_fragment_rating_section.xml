@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!-- Layout for TMDb rating -->
+    <RelativeLayout
+        android:id="@+id/movie_detail_tmdb_rating_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin">
+        <RelativeLayout
+            android:id="@+id/movie_detail_tmdb_rating_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/movie_detail_tmdb_rating_header"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tmdb_rating_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text" />
+            <TextView
+                android:id="@+id/movie_detail_tmdb_rating_vote_count_header"
+                android:layout_toEndOf="@id/movie_detail_tmdb_rating_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="@dimen/m_design_space_between_content_area"
+                android:text="@string/tmdb_rating_vote_count_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/movie_detail_tmdb_rating_vote_count_val"
+                android:layout_toEndOf="@id/movie_detail_tmdb_rating_vote_count_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="@dimen/m_design_space_between_content_area"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                tools:ignore="RtlSymmetry"
+                android:textIsSelectable="true" />
+            <TextView
+                android:id="@+id/movie_detail_tmdb_rating_vote_count_trailer"
+                android:layout_toEndOf="@id/movie_detail_tmdb_rating_vote_count_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="@dimen/m_design_space_between_content_area"
+                android:text="@string/tmdb_rating_vote_count_closing_brace"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                tools:ignore="RtlSymmetry" />
+        </RelativeLayout>
+        <RatingBar
+            android:id="@+id/movie_detail_tmdb_rating_bar"
+            android:layout_below="@id/movie_detail_tmdb_rating_title"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:isIndicator="true"
+            android:max="10"
+            android:numStars="10"
+            android:rating="3.5"
+            android:stepSize="0.1" />
+    </RelativeLayout>
+    <!-- Layout for user rating -->
+    <RelativeLayout
+        android:id="@+id/movie_detail_user_rating_layout"
+        android:layout_below="@id/movie_detail_tmdb_rating_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingStart="@dimen/m_design_screen_edge_left_right_margin"
+        android:paddingBottom="@dimen/m_design_space_between_content_area">
+        <TextView
+            android:id="@+id/movie_detail_user_rating_header"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:text="@string/user_rating_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text" />
+        <RatingBar
+            android:id="@+id/movie_detail_user_rating_bar"
+            android:layout_below="@id/movie_detail_user_rating_header"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:isIndicator="false"
+            android:max="10"
+            android:numStars="10"
+            android:rating="0"
+            android:stepSize="0.5" />
+    </RelativeLayout>
+</RelativeLayout>

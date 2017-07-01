@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/single_review_item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/single_review_item_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/single_review_item_review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_review_item_author"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="@string/single_review_item_collapse_line_item_count"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/secondary_text"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/single_review_item_show_button"
+        android:layout_width="@dimen/person_biography_collapse_icon_size"
+        android:layout_height="@dimen/person_biography_collapse_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/single_review_item_linear_layout"
+        android:background="@drawable/ic_keyboard_arrow_down"
+        android:backgroundTint="@color/divider_color"
+        android:clickable="true"
+        android:contentDescription="@string/review_item_show_button_content_description"
+        tools:ignore="UnusedAttribute" />
+
+    <View
+        android:id="@+id/single_review_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/single_review_item_linear_layout"
+        android:layout_marginTop="@dimen/m_design_space_between_content_area"
+        android:layout_toStartOf="@+id/single_review_item_show_button"
+        android:background="@color/divider_color" />
+
+    <ImageButton
+        android:id="@+id/single_review_item_hide_button"
+        android:layout_width="@dimen/person_biography_collapse_icon_size"
+        android:layout_height="@dimen/person_biography_collapse_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/single_review_item_linear_layout"
+        android:background="@drawable/ic_keyboard_arrow_up"
+        android:backgroundTint="@color/divider_color"
+        android:clickable="true"
+        android:contentDescription="@string/review_item_hide_button_content_description"
+        android:visibility="invisible"
+        tools:ignore="UnusedAttribute" />
+</RelativeLayout>

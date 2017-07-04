@@ -697,7 +697,11 @@ public class MovieMagicMainActivity extends AppCompatActivity implements
     protected void launchGooglePlayForRatingAndFeedback() {
         final String packageName = getPackageName()
         final Intent intent = new Intent(Intent.ACTION_VIEW)
+        //TODO
+        // use this for google play store apk
         intent.setData(Uri.parse("market://details?id=$packageName"))
+        // use this for amazon apk
+//        intent.setData(Uri.parse("amzn://apps/android?p=$packageName"))
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent)
         } else {

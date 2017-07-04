@@ -25,6 +25,8 @@
     <!-- Permissions to write in public directory -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!-- add the following line to application while creating amazon apk -->
+    <!--android:name="android.support.multidex.MultiDexApplication"-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_movie_magic"

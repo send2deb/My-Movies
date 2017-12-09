@@ -23,6 +23,9 @@ class DetailMovieActivity extends AppCompatActivity implements DetailMovieFragme
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_movie)
 
+        // Nullify the theme's background to reduce overdraw
+        getWindow().setBackgroundDrawable(null)
+
         // Show the EULA - first install or any update to the software
         // This is to ensure that if user declined and tried to view movie detail from notification menu
         new MyMoviesEULA(this).checkAndShowEula()

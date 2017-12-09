@@ -77,6 +77,9 @@ public class MovieMagicMainActivity extends AppCompatActivity implements
         LogDisplay.callLog(LOG_TAG,'onCreate is called',LogDisplay.MOVIE_MAGIC_MAIN_LOG_FLAG)
         setContentView(R.layout.activity_movie_magic_main)
 
+        // Nullify the theme's background to reduce overdraw
+        getWindow().setBackgroundDrawable(null)
+
         // Show the EULA - first install or any update to the software
         new MyMoviesEULA(this).checkAndShowEula()
 

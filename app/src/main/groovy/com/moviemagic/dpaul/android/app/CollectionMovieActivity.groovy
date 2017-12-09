@@ -20,6 +20,10 @@ class CollectionMovieActivity extends AppCompatActivity implements GridMovieFrag
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collection_movie)
+
+        // Nullify the theme's background to reduce overdraw
+        getWindow().setBackgroundDrawable(null)
+        
         if (savedInstanceState == null) {
             //Get the arguments from the intent
             final Uri uri = getIntent().getData()

@@ -1,9 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_detail_movie_layout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:ignore="Overdraw">
+    android:layout_height="wrap_content">
     <!-- Layout for title, genre & run time -->
     <include android:id="@+id/content_detail_movie_fragment_title_section"
         android:layout_width="match_parent"

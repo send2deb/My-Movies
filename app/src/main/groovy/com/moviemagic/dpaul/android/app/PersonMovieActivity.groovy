@@ -23,6 +23,10 @@ class PersonMovieActivity extends AppCompatActivity implements PersonMovieFragme
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_person_movie)
+
+        // Nullify the theme's background to reduce overdraw
+        getWindow().setBackgroundDrawable(null)
+
         if (savedInstanceState == null) {
             //Get the arguments from the intent
             final Bundle bundle = getIntent().getExtras()

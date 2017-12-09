@@ -50,6 +50,10 @@ class ImageViewerActivity extends AppCompatActivity {
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_viewer)
+
+        // Nullify the theme's background to reduce overdraw
+        getWindow().setBackgroundDrawable(null)
+
         mViewPager = findViewById(R.id.image_viewer_pager) as ViewPager
         mImageViewerMainLayout = findViewById(R.id.image_viewer_main_layout) as RelativeLayout
 

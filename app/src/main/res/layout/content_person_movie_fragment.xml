@@ -1,6 +1,5 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -12,13 +11,10 @@
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/person_info_layout"
         android:layout_below="@id/content_person_movie_fragment_poster_section"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary_background"
-        tools:ignore="Overdraw">
+        android:layout_height="wrap_content">
 
         <View
             android:id="@+id/content_person_movie_fragment_poster_section_divider"

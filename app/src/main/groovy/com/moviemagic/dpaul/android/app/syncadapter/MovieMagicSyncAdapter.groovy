@@ -51,6 +51,8 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
     private final static int MAX_PAGE_DOWNLOAD = 3
     //Define a variable for api page count
     private static int mTotalPage = 0
+    //Define a variable for Tmdb user movie list page count
+    private static int mTotalPageTmdbUserList = 0
     // Define a variable to contain a content resolver instance
     private final ContentResolver mContentResolver
     private final Context mContext
@@ -206,7 +208,7 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
             final Uri uri = uriBuilder.appendPath(GlobalStaticVariables.TMDB_MOVIE_PATH)
                     .appendPath(category)
                     .appendQueryParameter(GlobalStaticVariables.TMDB_MOVIE_API_KEY,BuildConfig.TMDB_API_KEY)
-                    .appendQueryParameter(GlobalStaticVariables.TMDB_MOVIE_PAGE,page.toString())
+                    .appendQueryParameter(GlobalStaticVariables.TMDB_MOVIE_PAGE,Integer.toString(page))
                     .build()
 
             final URL url = new URL(uri.toString())
@@ -261,28 +263,74 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
         LogDisplay.callLog(LOG_TAG,"processTmdbLists:Session id found -> $sessionId",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
         List<ContentValues> contentValues = []
         // Download user's Tmdb Watchlist movies
-        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST, accountId, sessionId)
+        mTotalPageTmdbUserList = 1
+        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST, accountId, sessionId, mTotalPageTmdbUserList)
         if(contentValues) {
             insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST)
             contentValues = []
         } else {
             LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
         }
+        // If more than one page exists then load the rest of the pages
+        if(mTotalPageTmdbUserList > 1) {
+            for (final pageCount in 2..mTotalPageTmdbUserList) {
+                contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST, accountId, sessionId, pageCount)
+                if(contentValues) {
+                    insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST)
+                    contentValues = []
+                } else {
+                    LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_WATCHLIST",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                    LogDisplay.callLog(LOG_TAG,"Page count -> $pageCount",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                }
+            }
+        }
+        // Reset the total page to 1
+        mTotalPageTmdbUserList = 1
+
         // Download user's Tmdb Favourite movies
-        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE, accountId, sessionId)
+        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE, accountId, sessionId, mTotalPageTmdbUserList)
         if(contentValues) {
             insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE)
             contentValues = []
         }  else {
             LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
         }
+        // If more than one page exists then load the rest of the pages
+        if(mTotalPageTmdbUserList > 1) {
+            for (final pageCount in 2..mTotalPageTmdbUserList) {
+                contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE, accountId, sessionId, mTotalPageTmdbUserList)
+                if(contentValues) {
+                    insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE)
+                    contentValues = []
+                }  else {
+                    LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_FAVOURITE",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                    LogDisplay.callLog(LOG_TAG,"Page count -> $pageCount",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                }
+            }
+        }
+        // Reset the total page to 1
+        mTotalPageTmdbUserList = 1
+
         // Download user's Tmdb Rated movies
-        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED, accountId, sessionId)
+        contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED, accountId, sessionId, mTotalPageTmdbUserList)
         if(contentValues) {
             insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED)
             contentValues = []
         } else {
             LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+        }
+        // If more than one page exists then load the rest of the pages
+        if(mTotalPageTmdbUserList > 1) {
+            for (final pageCount in 2..mTotalPageTmdbUserList) {
+                contentValues = downloadTmdbUserList(GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED, accountId, sessionId, mTotalPageTmdbUserList)
+                if(contentValues) {
+                    insertBulkRecords(contentValues, GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED)
+                    contentValues = []
+                } else {
+                    LogDisplay.callLog(LOG_TAG,"No movie data for category -> $GlobalStaticVariables.MOVIE_CATEGORY_TMDB_USER_RATED",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                    LogDisplay.callLog(LOG_TAG,"Page count -> $pageCount",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
+                }
+            }
         }
     }
 
@@ -294,7 +342,7 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
      * @return Formatted movie data as content values
      */
     private List<ContentValues> downloadTmdbUserList (
-            final String category, final String accountId, final String sessionId) {
+            final String category, final String accountId, final String sessionId, final int totalPage) {
         //TMDB api example
         // https://api.themoviedb.org/3/account/<accountId>/watchlist/movies?api_key=apiKey&session_id=sessionId
         List<ContentValues> tmdbUserMovieList = null
@@ -308,6 +356,7 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
                     .appendPath(GlobalStaticVariables.TMDB_USER_MOVIES_PATH)
                     .appendQueryParameter(GlobalStaticVariables.TMDB_MOVIE_API_KEY,BuildConfig.TMDB_API_KEY)
                     .appendQueryParameter(GlobalStaticVariables.TMDB_SESSION_ID_KEY,sessionId)
+                    .appendQueryParameter(GlobalStaticVariables.TMDB_MOVIE_PAGE,Integer.toString(totalPage))
                     .build()
 
             final URL tmdbUserUrl = new URL(tmdbUserUri.toString())
@@ -315,7 +364,10 @@ class MovieMagicSyncAdapter extends AbstractThreadedSyncAdapter {
 
             final def jsonData = new JsonSlurper(type: JsonParserType.INDEX_OVERLAY).parse(tmdbUserUrl)
             LogDisplay.callLog(LOG_TAG, "Tmdb user movie JSON data for $category -> $jsonData",LogDisplay.MOVIE_MAGIC_SYNC_ADAPTER_LOG_FLAG)
-            tmdbUserMovieList = JsonParse.parseMovieListJson(mContext, jsonData, category, GlobalStaticVariables.MOVIE_LIST_TYPE_TMDB_USER, mDateTimeStamp)
+            if(jsonData) {
+                tmdbUserMovieList = JsonParse.parseMovieListJson(mContext, jsonData, category, GlobalStaticVariables.MOVIE_LIST_TYPE_TMDB_USER, mDateTimeStamp)
+                mTotalPageTmdbUserList = JsonParse.getTotalPages(jsonData)
+            }
         } catch (final URISyntaxException e) {
             mPublicTmdbProcessingException = true
             Log.e(LOG_TAG, "URISyntaxException Error: ${e.message}", e)

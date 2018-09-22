@@ -514,6 +514,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/image_place_holder"
             android:contentDescription="@string/movie_detail_collection_image_content_description"
+            android:foreground="?android:attr/selectableItemBackground"
             tools:ignore="UnusedAttribute" />
     </RelativeLayout>
     <!-- line divider -->

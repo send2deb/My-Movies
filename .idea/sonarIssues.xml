@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/udacity_nanodegree/projects/PopularMovies/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/udacity_nanodegree/projects/PopularMovies/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/NetworkUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/udacity_nanodegree/projects/PopularMovies/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Popular-Movies-master/app/src/main/java/com/debdroid/popularmovies/MovieList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/DetailMovieFragment.groovy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/contentprovider/MovieMagicDbHelper.groovy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/contentprovider/MovieMagicProvider.groovy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BakingApp/app/src/main/java/com/debdroid/bakingapp/ui/RecipeListFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BakingApp/app/src/main/java/com/debdroid/bakingapp/ui/adapter/RecipeAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BakingApp/app/src/main/res/layout/single_recipe_ingredient.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BakingApp/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BuildItBigger/app/src/free/java/com/udacity/gradle/builditbigger/MainActivityFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BuildItBigger/app/src/main/java/com/udacity/gradle/builditbigger/JokeDisplayAsyncTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/BuildItBigger/app/src/paid/java/com/udacity/gradle/builditbigger/MainActivityFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/database/UserSearchedLocationEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/repository/TinruRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/retrofit/GooglePlacesApiService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/FlightListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/HomeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/NearByGridActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/PointOfInterestDetailActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/PointOfInterestListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/adapter/FlightListAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/adapter/NearbyGridAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/ui/adapter/PointOfInterestAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/utility/CommonUtility.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/utility/NetworkUtility.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/utility/RepositoryUtility.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/java/com/debdroid/tinru/viewmodel/HomeViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/activity_flight_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/activity_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/activity_near_by_grid.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/activity_point_of_interest_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/activity_point_of_interest_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/point_of_interest_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/single_flight_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/layout/single_point_of_interest_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values-v21/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/bools.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/dimen.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/integer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/integers.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/CapstoneProject/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieDetail.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieDetailActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/MovieListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/ReviewActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/ReviewAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/VideoAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/adapters/MovieAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/adapters/ReviewAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/adapters/VideoAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/application/MyApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/contentprovider/PopularMovieContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/contentprovider/PopularMovieProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/contentprovider/PopularMoviesDbHelper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/DeleteDatabaseLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/InsertDatabaseLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/MovieListLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/QueryDatabaseLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/TmdbMovieDetailLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/TmdbMovieReviewLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/TmdbMovieVideo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/TmdbMovieVideoLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/loaders/TmdbReviewLoader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/model/Movie.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/model/Reviews.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/model/Videos.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/DatabaseUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/DatbaseUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/DateUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/JsonUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/java/com/debdroid/popularmovies/utils/NetworkUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/activity_movie_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/activity_movie_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/activity_review.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/single_movie_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/single_review_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/layout/single_video_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/menu/movie_detail_activity_menu.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/menu/movie_list_activity_menu.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/values-v21/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/learning/udacity_nanodegree/projects/PopularMovies/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

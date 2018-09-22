@@ -7,7 +7,8 @@
     cardview:cardBackgroundColor="@color/primary"
     cardview:cardCornerRadius="@dimen/card_view_corner_radius"
     cardview:cardElevation="@dimen/card_view_elevation"
-    cardview:cardUseCompatPadding="true">
+    cardview:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <RelativeLayout
         android:layout_width="@dimen/grid_image_width"

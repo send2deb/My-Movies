@@ -8,7 +8,8 @@
     cardview:cardBackgroundColor="@color/primary"
     cardview:cardCornerRadius="@dimen/card_view_corner_radius"
     cardview:cardElevation="@dimen/card_view_elevation"
-    cardview:cardUseCompatPadding="true">
+    cardview:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <ImageView
         android:id="@+id/person_image_grid_movie_image"

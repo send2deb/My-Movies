@@ -48,6 +48,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/proguard-rules.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/CollectionMovieFragment.groovy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/DetailMovieFragment.groovy">
           <value>
             <set />
@@ -74,6 +84,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
           <value>
             <set />
           </value>

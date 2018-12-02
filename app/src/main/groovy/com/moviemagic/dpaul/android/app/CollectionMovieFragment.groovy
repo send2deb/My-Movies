@@ -485,7 +485,8 @@ class CollectionMovieFragment extends Fragment implements LoaderManager.LoaderCa
         final String tmdbWebCollectionUrl = "$GlobalStaticVariables.TMDB_WEB_COLLECTION_BASE_URL${Integer.toString(mCollectionId)}"
         final Intent sendIntent = new Intent()
         sendIntent.setAction(Intent.ACTION_SEND)
-        sendIntent.putExtra(Intent.EXTRA_TEXT, "$mCollectionName, TMDb link - $tmdbWebCollectionUrl #${getString(R.string.app_name)} app")
+        String intentExtraValue = "$mCollectionName, TMDb link - $tmdbWebCollectionUrl #${getString(R.string.app_name)} app"
+        sendIntent.putExtra(Intent.EXTRA_TEXT, intentExtraValue)
         sendIntent.setType("text/plain")
         // Create intent to show the chooser dialog
         final Intent chooser = Intent.createChooser(sendIntent, getString(R.string.collection_chooser_title))

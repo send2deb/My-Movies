@@ -1911,7 +1911,8 @@ class DetailMovieFragment extends Fragment implements LoaderManager.LoaderCallba
         final String tmdbWebMovieUrl = "$GlobalStaticVariables.TMDB_WEB_MOVIE_BASE_URL${Integer.toString(mMovieId)}"
         final Intent sendIntent = new Intent()
         sendIntent.setAction(Intent.ACTION_SEND)
-        sendIntent.putExtra(Intent.EXTRA_TEXT, "$mMovieTitle, TMDb link - $tmdbWebMovieUrl #${getString(R.string.app_name)} app")
+        String intentExtraValue = "$mMovieTitle, TMDb link - $tmdbWebMovieUrl #${getString(R.string.app_name)} app"
+        sendIntent.putExtra(Intent.EXTRA_TEXT, intentExtraValue)
         sendIntent.setType("text/plain")
         // Create intent to show the chooser dialog
         final Intent chooser = Intent.createChooser(sendIntent, getString(R.string.detail_movie_chooser_title))

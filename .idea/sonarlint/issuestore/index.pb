@@ -83,3 +83,9 @@ v
 Fapp/src/main/res/layout/content_detail_movie_fragment_rest_section.xml,d/7/d7f620b5021a39531f9ccf35b46b43d23015d2e9
 j
 :app/src/main/res/layout/single_backdrop_viewpager_item.xml,d/a/dad45d974c5575b2a679832ec4eb0af8d01deb1f
+?
+settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
+@
+local.properties,0/7/0712df971a99ac4d2fccb8e0fb19f377f3374cca
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e

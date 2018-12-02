@@ -16,15 +16,19 @@
 #   public *;
 #}
 # some Groovy classes don’t get removed by ProGuard.
- -dontobfuscate
-  -keep class org.codehaus.groovy.vmplugin.**
-  -keep class org.codehaus.groovy.runtime.dgm*
-  -keepclassmembers class org.codehaus.groovy.runtime.dgm* {
-      *;
-  }
-  -keepclassmembers class ** implements org.codehaus.groovy.runtime.GeneratedClosure {
-      *;
-  }
-  -dontwarn org.codehaus.groovy.**
-  -dontwarn groovy**
-  -dontwarn com.squareup.okhttp.**
+-dontobfuscate
+
+-keep class org.codehaus.groovy.vmplugin.**
+-keep class org.codehaus.groovy.runtime.dgm*
+
+-keepclassmembers class org.codehaus.groovy.runtime.dgm* {*;}
+-keepclassmembers class ** implements org.codehaus.groovy.runtime.GeneratedClosure {*;}
+-keepclassmembers class org.codehaus.groovy.reflection.GroovyClassValue* {*;}
+-keepclassmembers class groovyx.example.** {*;}
+-keepclassmembers class com.arasthel.swissknife.utils.Finder {*;}
+
+-dontwarn org.codehaus.groovy.**
+-dontwarn groovy**
+-dontnote org.codehaus.groovy.**
+-dontnote groovy**
+

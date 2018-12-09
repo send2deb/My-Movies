@@ -48,47 +48,12 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/proguard-rules.pro">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/CollectionMovieFragment.groovy">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/DetailMovieFragment.groovy">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/contentprovider/MovieMagicDbHelper.groovy">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/contentprovider/MovieMagicProvider.groovy">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/build.gradle">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/gradle.properties">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+        <entry key="$PROJECT_DIR$/app/src/main/groovy/com/moviemagic/dpaul/android/app/HomeMovieFragment.groovy">
           <value>
             <set />
           </value>

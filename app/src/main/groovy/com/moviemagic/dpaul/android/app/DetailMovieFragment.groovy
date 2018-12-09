@@ -1977,7 +1977,9 @@ class DetailMovieFragment extends Fragment implements LoaderManager.LoaderCallba
                 animation.setAnimationListener(new Animation.AnimationListener() {
                     @Override
                     void onAnimationStart(final Animation anim) {
-                        getView().setLayerType(View.LAYER_TYPE_NONE, null)
+                        if(getView() != null) {
+                            getView().setLayerType(View.LAYER_TYPE_NONE, null)
+                        }
                     }
                     @Override
                     void onAnimationEnd(final Animation anim) {

@@ -89,3 +89,9 @@ j
 local.properties,0/7/0712df971a99ac4d2fccb8e0fb19f377f3374cca
 X
 (gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+7
+gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
+ƒ
+Sapp/src/main/groovy/com/moviemagic/dpaul/android/app/CollectionMovieFragment.groovy,2/a/2a06d1dc54f0ebcb6dcc83d716e7c92766adfa9f
+F
+app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9

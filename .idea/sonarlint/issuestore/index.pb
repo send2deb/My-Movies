@@ -95,3 +95,9 @@ X
 Sapp/src/main/groovy/com/moviemagic/dpaul/android/app/CollectionMovieFragment.groovy,2/a/2a06d1dc54f0ebcb6dcc83d716e7c92766adfa9f
 F
 app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
+O
+apk_release/release/output.json,4/8/48cf0e7da4da9280cad01f5f1f0860ed8e30094f
+x
+Happ/src/main/groovy/com/moviemagic/dpaul/android/app/MyMoviesEULA.groovy,b/d/bdc66759a8f4418125f97692ac8d7480460fb842
+
+Oapp/src/main/groovy/com/moviemagic/dpaul/android/app/DetailMovieActivity.groovy,c/e/ce5b2351ada9ce393762aa671ad1b556df5cdab2

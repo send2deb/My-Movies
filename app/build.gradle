@@ -4,7 +4,6 @@ apply plugin: 'groovyx.android'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.moviemagic.dpaul.android.app"
         minSdkVersion 17
@@ -13,7 +12,7 @@ android {
         versionName "1.1.1"
         //TODO
         // use multiDexEnabled true for amazon apk
-        multiDexEnabled true
+        //multiDexEnabled true
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {

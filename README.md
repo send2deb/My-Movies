@@ -1,5 +1,5 @@
 # My Movies
-I created this app during my android learning days and it is written in groovy. The app is available in Google Playstore.
+I created this app during my android learning days and it is written in groovy. The app is **No more available in Google Playstore as it's not maintained and updated.**
 
 ## App Overview
 The objective of this app is to browse and manage your movie collection in your mobile or tablet device. The app uses the TMDb API, you can view details of popular, top rated and new movies. You can also manage all your movie choice and collection on your device, the application allows you to add unlimited number of movies to four different categories – Watched, Wish List, Favourite and Collection. You can login to TMDb account to manage your TMDb lists and rate TMDb movies. The app also notifies on new releases and allows search for any movie.

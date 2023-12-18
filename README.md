@@ -13,8 +13,6 @@ The objective of this app is to browse and manage your movie collection in your 
 ![](https://user-images.githubusercontent.com/33470591/49743946-d9564f00-fcc1-11e8-9387-434326a6961d.png)
 ![](https://user-images.githubusercontent.com/33470591/49745541-33a4df00-fcc5-11e8-815a-4f8ae5eec590.png)
 
-## How to use the app
-Download it from [Google Playstore](https://play.google.com/store/apps/details?id=com.moviemagic.dpaul.android.app)
 
 ## Disclaimer
 The source code, images and any other asset used in this project is subject to copyright and must not be used for any purpose or reengineered or copied without prior permission from the developer.
